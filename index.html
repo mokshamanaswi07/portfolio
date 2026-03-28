@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Adiós:wght@400&family=Sundos:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <h2 class="logo">Moksha Manaswi Gudimalla</h2>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <h1>Hi, I'm Moksha</h1>
+  <p>Computer Science Student | Web Developer | Problem Solver</p>
+  <div class="buttons">
+    <a href="#projects" class="btn">View Projects</a>
+    <a href="resume.pdf" class="btn outline" target="_blank">View Resume</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I'm a second-year Computer Science student with a strong interest in building practical and user-friendly applications. I enjoy working on web development projects and exploring how software can solve real-world problems.
+    <br><br>
+    Currently, I'm focused on improving my skills in HTML, CSS, JavaScript, and core programming concepts while building projects that reflect my learning. I'm particularly interested in developing efficient, clean, and scalable solutions.
+    <br><br>
+    I'm actively looking for opportunities to gain hands-on experience, collaborate with others, and grow as a developer.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-container">
+    <span>C++</span>
+    <span>JavaScript</span>
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>Git</span>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="projects-container">
+    <div class="project-card" data-color="#013D5A" data-title-color="#FCF3E3" data-brief-color="#013D5A" data-title-color="#FCF3E3" data-title="Portfolio Website" data-brief="A personal portfolio built using HTML, CSS, and JavaScript." data-description="This portfolio showcases my skills and projects as a computer science student. It features a responsive design, smooth animations, and interactive elements. The website demonstrates my proficiency in web development with clean code and modern design practices.">
+      <h3>Portfolio Website.</h3>
+    </div>
+
+    <div class="project-card" data-color="#BDD3CE" data-text-color="#013D5A" data-title="Car based Website" data-brief="A responsive car showcase website with dynamic content." data-description="This project showcases various car models with detailed specifications and features. The website includes dynamic filtering options, image galleries, and a responsive layout that works seamlessly across all devices. It demonstrates my ability to create engaging user interfaces with JavaScript interactivity.">
+      <h3>Nitro-Car based Website.</h3>
+    </div>
+
+    <div class="project-card" data-color="#FCF3E3" data-text-color="#013D5A" data-title="IoT-Based Child Safety Alert System" data-brief="A system that detects a child in a car and monitors cabin temperature to prevent heatstroke." data-description="The Child Safety Alarm System for Cars is a low-cost solution that detects a child's presence and monitors cabin temperature using sensors and an Arduino Nano. When unsafe conditions are detected, it triggers alerts such as buzzer, LED, car alarm, and sends an SMS to caregivers via a GSM module. This project demonstrates a practical and scalable use of embedded systems and IoT to improve child safety in vehicles.">
+      <h3>Child Safety Alarm System.</h3>
+    </div>
+  </div>
+
+  <!-- Project Modal -->
+  <div class="project-modal" id="projectModal">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <h3 class="modal-title"></h3>
+      <p class="modal-brief"></p>
+      <p class="modal-description"></p>
+    </div>
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:gudimalla.moksha2024@vitstudent.ac.in" target="_blank">gudimalla.moksha2024@vitstudent.ac.in</a></p>
+  <p>GitHub: <a href="https://github.com/mokshamanaswi" target="_blank" rel="noopener">github.com/mokshamanaswi</a></p>
+  <div class="social-links">
+    <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <img class="social-icon" src="https://cdn.simpleicons.org/linkedin/ffffff" alt="LinkedIn logo">
+    </a>
+    <a href="https://github.com/mokshamanaswi" target="_blank" rel="noopener" aria-label="GitHub">
+      <img class="social-icon" src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub logo">
+    </a>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
