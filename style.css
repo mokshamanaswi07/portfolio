@@ -106,7 +106,7 @@ h2 {
 /* CARD */
 .card {
     background: var(--card);
-    padding: 20px;
+    padding: 25px;
     border-radius: 12px;
     box-shadow: 0 6px 20px rgba(0,0,0,0.05);
     transition: 0.3s;
@@ -139,4 +139,122 @@ footer {
         margin-top: 30px;
         width: 250px;
     }
+}
+
+.socials {
+    align-items: center;
+  margin-top: 25px;
+}
+
+.socials a img {
+  width: 30px;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.socials a img:hover {
+  transform: scale(1.2);
+}
+
+#skills {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+#skills h2 {
+  font-size: 2.5rem;
+  color: #5a6ff0;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+  align-items: stretch;
+}
+
+.skill-card {
+  background: #ffffff;
+  padding: 30px 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-icon {
+  font-size: 2rem;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.skill-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #1f1f1f;
+}
+
+.skill-card p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+#certifications {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+#certifications h2 {
+  font-size: 2.5rem;
+  color: #5a6ff0;
+  margin-bottom: 50px;
+}
+
+/* Grid */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+/* Card */
+.cert-card {
+  padding: 30px 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+/* Text */
+.cert-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.issuer {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.year {
+  color: #999;
+  margin-bottom: 15px;
+}
+
+/* Button */
+.cert-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #5a6ff0;
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.cert-btn:hover {
+  background: #3d52d5;
 }
