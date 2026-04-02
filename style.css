@@ -72,11 +72,13 @@ nav {
     border-radius: 20px;
 }
 
-/* BUTTON */
+/* BUTTON (FIXED) */
 .btn {
+    display: inline-block;
+    width: fit-content;
     background: var(--primary);
     color: white;
-    padding: 10px 25px;
+    padding: 10px 20px;
     border-radius: 30px;
     text-decoration: none;
 }
@@ -96,11 +98,11 @@ h2 {
     color: var(--primary);
 }
 
-/* GRID */
+/* GRID (2 PER ROW FIXED) */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
 }
 
 /* CARD */
@@ -110,6 +112,15 @@ h2 {
     border-radius: 12px;
     box-shadow: 0 6px 20px rgba(0,0,0,0.05);
     transition: 0.3s;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* FIX BUTTON ALIGNMENT */
+.card .btn {
+    align-self: flex-start;
+    margin-top: auto;
 }
 
 .card:hover {
@@ -128,7 +139,7 @@ footer {
     background: white;
 }
 
-/* RESPONSIVE */
+/* RESPONSIVE HERO */
 @media(max-width: 900px){
     .hero {
         flex-direction: column;
@@ -141,120 +152,133 @@ footer {
     }
 }
 
+/* RESPONSIVE GRID */
+@media(max-width: 768px){
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 .socials {
     align-items: center;
-  margin-top: 25px;
+    margin-top: 25px;
 }
 
 .socials a img {
-  width: 30px;
-  margin: 0 10px;
-  transition: transform 0.3s ease;
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
 }
 
 .socials a img:hover {
-  transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 #skills {
-  padding: 80px 10%;
-  text-align: center;
+    padding: 80px 10%;
+    text-align: center;
 }
 
 #skills h2 {
-  font-size: 2.5rem;
-  color: #5a6ff0;
-  margin-bottom: 50px;
-  font-weight: 700;
+    font-size: 2.5rem;
+    color: #5a6ff0;
+    margin-bottom: 50px;
+    font-weight: 700;
 }
 
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 25px;
-  align-items: stretch;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+    align-items: stretch;
 }
 
 .skill-card {
-  background: #ffffff;
-  padding: 30px 20px;
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #ffffff;
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skill-icon {
-  font-size: 2rem;
-  display: inline-block;
-  margin-bottom: 15px;
+    font-size: 2rem;
+    display: inline-block;
+    margin-bottom: 15px;
 }
 
 .skill-card h3 {
-  font-size: 1.3rem;
-  margin-bottom: 10px;
-  color: #1f1f1f;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #1f1f1f;
 }
 
 .skill-card p {
-  font-size: 0.95rem;
-  color: #666;
-  line-height: 1.5;
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.5;
 }
 
 #certifications {
-  padding: 80px 10%;
-  text-align: center;
+    padding: 80px 10%;
+    text-align: center;
 }
 
 #certifications h2 {
-  font-size: 2.5rem;
-  color: #5a6ff0;
-  margin-bottom: 50px;
+    font-size: 2.5rem;
+    color: #5a6ff0;
+    margin-bottom: 50px;
 }
 
-/* Grid */
+/* CERT GRID */
 .cert-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
 }
 
-/* Card */
+/* CERT CARD */
 .cert-card {
-  padding: 30px 20px;
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-  transition: 0.3s;
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
 }
 
-/* Text */
+/* TEXT */
 .cert-card h3 {
-  font-size: 1.3rem;
-  margin-bottom: 10px;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
 }
 
 .issuer {
-  color: #666;
-  font-size: 0.95rem;
+    color: #666;
+    font-size: 0.95rem;
 }
 
 .year {
-  color: #999;
-  margin-bottom: 15px;
+    color: #999;
+    margin-bottom: 15px;
 }
 
-/* Button */
+/* BUTTON */
 .cert-btn {
-  display: inline-block;
-  padding: 8px 16px;
-  background: #5a6ff0;
-  color: white;
-  border-radius: 20px;
-  text-decoration: none;
-  font-size: 0.9rem;
-  transition: 0.3s;
+    display: inline-block;
+    padding: 8px 16px;
+    background: #5a6ff0;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: 0.3s;
 }
 
 .cert-btn:hover {
-  background: #3d52d5;
+    background: #3d52d5;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
 }
